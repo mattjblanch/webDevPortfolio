@@ -1,0 +1,532 @@
+#header-logo {
+    height: 100px;
+    display: inline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2e48;
+    color: #67e0f3;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:visited {
+    font-weight: normal;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.SourceCodePro {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about-me-paragraph {
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.projects-paragraph {
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.contact-paragraph {
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Padding around the footer */
+    width: 100%; /* Full width */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
+
+footer a {
+    color: #67e0f3; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding if needed */
+    width: 100%;
+}
+
+.contact-button {
+    background-color: #67e0f3;
+    color: #2b2e48;
+    border: none;
+    border-radius: 5px;
+    /* padding: 10px 20px 0px 20px; */
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 50px 0 0; /* Adjust margin as needed */
+    text-align: center;
+    float: right;
+    display: block;
+
+
+}
+
+.contact-button:hover {
+    background-color: #2b2e48; /* Change background color on hover */
+    color: #67e0f3; /* Change text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    border: 1px solid #67e0f3;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+    clear: both;
+}
+/* .nav-ul {
+    display: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-li {
+    display: inline;
+    float:right;
+    color: #67e0f3;
+}
+
+.nav-bar {
+    display: inline;
+    color: #67e0f3;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #2b2e48;
+} */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2b2e48;
+    z-index: 1000;
+  }
+
+.experience-date-location {
+    font-size: 25px;
+    font-weight: 700;
+    color: #67e0f3;
+    margin-top: 10px;
+    position: absolute; /* Position the element absolutely within the carousel item */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2e48;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: #67e0f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #2b2e48;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav-ul {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display:inline;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+/* Hide the menu icon by default */
+.menu-icon {
+    display: none;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+#carousel-mcdonalds {
+    background-image: url('./resources/images/logo_mcd.svg');
+}
+
+
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px; /* Minimum height to ensure visibility */
+    color: #67e0f3; /* Ensure text is readable */
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.carousel-item p {
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Black overlay with 75% opacity */
+    z-index: 1;
+}
+
+.carousel-item > * {
+    position: relative;
+    z-index: 2;
+}
+
+#carousel-mcdonalds {
+    background-image: url('./images/logo_mcd.svg');
+}
+
+#carousel-shipshape {
+    background-image: url('./images/logo_shipshape.png');
+    background-size: 80%;
+}
+
+#carousel-engage {
+    background-image: url('./images/logo_engage.png');
+}
+
+#carousel-debtcol {
+    background-image: url('./images/logo_debtcol.jpg');
+}
+
+#carousel-ssp {
+    background-image: url('./images/logo_ssp.svg');
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #67e0f3;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.badge {
+    background-color: #0a7001; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 2px 5px; /* Padding around the text */
+    font-size: 12px; /* Smaller font size */
+    border-radius: 3px; /* Rounded corners */
+    margin-left: 5px; /* Space between the text and the badge */
+    vertical-align: text-top; /* Align the badge vertically */
+}
+
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: rgba(0,0,0,0.4);
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Contact form styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2b2e48;
+    color: white;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #67e0f3;
+    color: #2b2e48;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #2b2e48;
+    color: #67e0f3;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Style for the menu icon */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #67e0f3;
+        z-index: 1001;
+    }
+
+    /* Style for the slide-out menu */
+    .nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 100px 0 0 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        right: -350px; /* Initially hidden off-screen */
+        width: 350px;
+        height: 100%;
+        background-color: #2b2e48;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-ul li {
+        display: block;
+        float: none;
+
+    }
+
+    .nav-ul li img {
+        display: block;
+        margin: 0 auto;
+        height: 100px;
+    }
+    #nav-logo-image-2 {
+        display: block;
+        margin: 0 auto;
+        height: 60px;
+        padding-top: 20px;
+    }
+        /* Style for the overlay */
+    .overlay {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 999; /* Below the menu but above other content */
+    }
+
+    .overlay.active {
+        display: block; /* Show the overlay when active */
+    }
+    .overlay-active .nav-ul {
+        display: block; /* Ensure the menu is shown when overlay is active */
+    }
+    .overlay-active {
+        overflow: hidden;
+    }
+    
+
+}
+
+
+@media (min-width: 769px) {
+    /* Add your styles for screens larger than 768 pixels here */
+    h1 {
+        margin-top: 200px;
+    }
+    /* Example styles */
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+
+
+    .nav-ul {
+        position: static; /* Reset position to static */
+        width: auto; /* Reset width */
+        height: auto; /* Reset height */
+        background-color: transparent; /* Reset background color */
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: flex-end; /* Align items to the right */
+        padding: 0; /* Reset padding */
+        transition: none; /* Remove transition */
+        align-items: center; /* Center items vertically */
+    }
+
+    .nav-ul li {
+        display: inline-block; /* Display list items inline */
+        margin: 0 10px; /* Add some margin between items */
+    }
+
+    .nav-ul li img {
+        display: none; /* Display images inline */
+        height: auto; /* Reset height */
+        margin: 0; /* Reset margin */
+    }
+
+    #nav-logo-image-2 {
+        display: none; /* Display logo inline */
+        height: auto; /* Reset height */
+        padding-top: 0; /* Reset padding */
+    }
+
+    .overlay {
+        display: none; /* Ensure overlay is hidden on larger screens */
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px; /* Optional: Add some space between the columns */
+    }
+
+    .about-container, .experience-container, .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px; /* Optional: Add some space between the columns */
+    }
+
+    .about-container h2, .experience-container h2, .projects-container h2 {
+        grid-column: 1; /* Place h2 in the first column */
+    }
+
+    .about-content, .experience-content, .projects-content {
+        grid-column: 2; /* Place paragraph and button in the second column */
+        padding-top: 50px;
+    }
+
+
+}

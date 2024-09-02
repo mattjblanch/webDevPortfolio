@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Blanch - Portfolio</title>
+    <link rel="stylesheet" href="./resources/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img src="/resources/images/logo1a.png" alt="Matt Blanch .dev logo" id="header-logo">
+                <div class="menu-icon">&#9776;</div>
+                <ul class="nav-ul">
+                    <li id="nav-logo-1"><img id="nav-logo-image" src="./resources/images/logo1b.png"></li>
+                    <li id="nav-logo-2"><img id="nav-logo-image-2" src="./resources/images/logo1c.png"></li>
+                    <li class="nav-li"><a href="/index.html">Home</a></li>
+                    <li class="nav-li"><a href="#projects">Projects <span class="badge">Coming Soon</span></a></li>
+                    <li class="nav-li"><a href="#contact" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <h1>Matt Blanch - Full Stack Developer</h1>
+
+    <section id="about">    
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p class="SourceCodePro about-me-paragraph">
+                Hi, I'm Matt, a web developer based in Melbourne, Australia.
+                With over 10 years of professional experience in system and network administration, I’ve developed a deep understanding of technology and its impact on businesses. Now, I’m channeling that knowledge into my true passion—creating functional and visually captivating websites and web applications. As I transition my career, I’m excited to focus on building innovative web solutions that shape the future.
+                </p>
+                <p class="SourceCodePro about-me-paragraph">    
+                Keep reading below to find out more, or click 'Contact Me' to get in touch and tell me about your project!
+                </p>
+                <button class="contact-button">Contact Me</button>
+            </div>
+        </div>
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Contact Me</h2>
+                <p>Please email me at matt@atmattit.com</p>
+                <!-- <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form> -->
+            </div>
+        </div>
+
+        <div id="contact-popup" style="display:none;">
+            <h2>Contact Me</h2>
+            <p>You can contact me by email at <a href="mailto:matt@atmattit.com">matt@atmattit.com</a></p>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="experience-container">
+            <h2>Experience</h2>
+                <div class="experience-content">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item" id="carousel-mcdonalds">
+                                <h3>Assistant Manager</h3>
+                                <p><a href="https://mcdonalds.com.au/" target="_blank">McDonalds</a></p>
+                                <p class="SourceCodePro" data-text="During my time in McDonald’s management, I developed essential business skills that are highly transferable to other industries. I gained hands-on experience with business systems, including sales forecasting, inventory management, and crew training. Managing the profit and loss (P&L) statements gave me a solid understanding of financial accountability and operational efficiency. Additionally, I honed my leadership skills, learning to optimize team rosters and ensure that resources were aligned with business needs, which has been invaluable in my career."></p>
+                                <p class="experience-date-location">2006 - 2014, Newcastle, Australia</p>
+                            </div>
+                            <div class="carousel-item" id="carousel-shipshape">
+                                <h3>IT Manager</h3>
+                                <p><a href="https://www.myshipshape.com/ss/un/termsExplained.jsp" target="_blank">Ship Shape Group</a></p>
+                                <p class="SourceCodePro" data-text="As the IT Manager at Ship Shape Group, I supported key departments such as construction, recruitment, payroll, and accounting, and provided first-line support for an internal-facing web application. I worked closely with the sole developer to resolve issues, ensuring that the application met the needs of the business. My role required managing IT systems, implementing strategic solutions, and gaining hands-on experience with networked finance applications. This experience enhanced my technical problem-solving skills and deepened my understanding of how to align technology with business objectives."></p>
+                                <p class="experience-date-location">2014 - 2020, London, UK</p>
+                            </div>
+                            <div class="carousel-item" id="carousel-engage">
+                                <h3>Operations Manager</h3>
+                                <p><a href="https://www.engagetech.com/" target="_blank" rel="noopener noreferrer">Engage Technology Partners</a></p>
+                                <p class="SourceCodePro" data-text="At Engage Technology Partners, a startup by the same operators as Ship Shape Group, I served as Operations Manager while continuing my role at Ship Shape. Engage focused on transforming internal recruitment and payroll processes into a customer-facing platform, supported by a team of 30+ developers across Europe. In this role, I worked closely with the development team to ensure client requirements were clearly understood and implemented, while also onboarding new clients to the platform. My work was instrumental in delivering a comprehensive HR and Payroll management solution tailored to the UK temporary workforce market.""></p>
+                                <p class="experience-date-location">2017 - 2021, London, UK</p>
+                            </div>
+                            <div class="carousel-item" id="carousel-debtcol">
+                                <h3>IT Support Technican</h3>
+                                <p><a href="https://debtcol.com.au/" target="_blank" rel="noopener noreferrer">Debtcol Software</a></p>
+                                <p class="SourceCodePro" data-text="At DebtCol, I began as an IT Support Technician, initially focused on supporting external customers who used our in-house application designed for debt collection agencies across Australia. My role quickly evolved to include supporting internal users, where I implemented interactive checklists for the service team to ensure that our service infrastructure was consistently maintained. Additionally, I provided technical support for Office 365 and the Zoho suite, further contributing to the smooth operation of the company's internal systems."></p>
+                                <p class="experience-date-location">2021 - 2022, Melbourne, Australia</p>
+                            </div>
+                            <div class="carousel-item" id="carousel-ssp">
+                                <h3>D&T Implementation Lead</h3>
+                                <p><a href="https://www.foodtravelexperts.com/our-markets/asia-pacific/australia/" target="_blank" rel="noopener noreferrer">SSP Catering Group</a></p>
+                                <p class="SourceCodePro" data-text="As the D&T Implementation Lead at SSP, I bridge the gap between business objectives and technology solutions, overseeing the integration of various systems to align acquired businesses with SSP’s Digital & Technology Strategy. My responsibilities include strategic planning with regional and local leaders, conducting in-depth requirements analysis, and leading cross-functional teams to ensure successful technology integration. I engage stakeholders at all levels, manage risks, and drive change management initiatives to facilitate smooth transitions. My role also involves evaluating potential solutions, managing projects, and fostering collaboration to embed SSP’s working culture across integrated teams."></p>
+                                <p class="experience-date-location">2022 - Present, Melbourne, Australia</p>
+                            </div>
+                        </div>
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    
+    </section>
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="projects-content">
+                <p class="projects-paragraph SourceCodePro">Coming Soon...</p>
+            </div>
+        </div>  
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2024, Matt Blanch. All rights reserved.</p>
+        <p>Follow me on 
+            <!-- <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">Twitter</a>,  -->
+            <a href="https://www.linkedin.com/in/mattjblanch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>- 
+            <a href="https://github.com/mattjblanch" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+    </footer>
+
+
+    <script src="resources/javascript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the slide-out menu
+            var menu = document.querySelector(".nav-ul");
+
+            // Get all links in the slide-out menu
+            var menuLinks = document.querySelectorAll(".nav-ul a");
+
+            // Add click event listener to each link
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    // Hide the menu
+                    menu.classList.add("menu-hidden");
+
+                    // Remove the overlay
+                    document.body.classList.remove("overlay-active");
+                });
+            });
+
+            // Get the modal
+            var modal = document.getElementById("contact-modal");
+
+            // Get the button that opens the modal
+            var btn = document.querySelector(".contact-button");
+
+            // Get the <span> element that closes the modal
+            var span = document.querySelector(".close-button");
+
+            // Get the contact link in the slide-out menu
+            var contactLink = document.getElementById("contact-link");
+
+            // Function to open the modal
+            function openModal() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = openModal;
+
+            // When the user clicks the contact link, open the modal and hide the menu if in mobile mode
+            contactLink.onclick = function(event) {
+                event.preventDefault(); // Prevent the default anchor behavior
+                openModal();
+
+                // Check if the menu is visible (mobile mode)
+                if (window.getComputedStyle(menu).display !== "none") {
+                    menu.classList.add("menu-hidden");
+                    document.body.classList.remove("overlay-active");
+                }
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
